@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gestion des Produits de Beauté</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gestion des Produits de Beauté</h1>
+      <form id="form-ajout-produit">
+        <input
+          type="text"
+          id="nom-produit"
+          placeholder="Nom du produit"
+          required
+        />
+        <select id="marque-produit" required>
+          <option value="">Choisissez une marque</option>
+          <option value="Action">Action</option>
+          <option value="Byoma">Byoma</option>
+          <option value="C. Thilbury">C. Thilbury</option>
+          <option value="Chanel">Chanel</option>
+          <option value="Clarins">Clarins</option>
+          <option value="Clinique">Clinique</option>
+          <option value="Dior">Dior</option>
+          <option value="Erborian">Erborian</option>
+          <option value="Fenty">Fenty</option>
+          <option value="Garancia">Garancia</option>
+          <option value="Guerlain">Guerlain</option>
+          <option value="La neige">La neige</option>
+          <option value="Lancôme">Lancôme</option>
+          <option value="Lauder">Lauder</option>
+          <option value="Make up forever">Make up forever</option>
+          <option value="Morrocanoil">Morrocanoil</option>
+          <option value="Sephora">Sephora</option>
+          <option value="YSL">YSL</option>
+        </select>
+
+        <select id="qualite-produit" required>
+          <option value="">Notation (0-5 étoiles)</option>
+          <option value="0">☆☆☆☆☆</option>
+          <option value="1">★☆☆☆☆</option>
+          <option value="2">★★☆☆☆</option>
+          <option value="3">★★★☆☆</option>
+          <option value="4">★★★★☆</option>
+          <option value="5">★★★★★</option>
+        </select>
+        <button type="submit">Ajouter Produit</button>
+      </form>
+      <div id="produits-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
